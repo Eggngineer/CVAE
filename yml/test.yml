@@ -7,7 +7,7 @@ weight : 'wb'
 yml : 'yml/train.yml'
 model_name : 'CVAE_tryTrain'
 
-train : True
+train : False
 downloads : True
 shuffle : True
 
@@ -21,3 +21,4 @@ epochs : 10
 image_size : 784 #28*28
 h_dim : 32
 z_dim : 16
+cond_dim : 10
