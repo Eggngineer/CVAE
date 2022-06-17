@@ -9,6 +9,7 @@ import yaml
 import numpy as np
 from pathlib import Path
 import wandb
+from torch.autograd import Variable
 
 BASE_DIR = Path('.')
 WEIGHT_DIR = BASE_DIR
@@ -24,11 +25,18 @@ def load_yml(yml_path):
         yml = yaml.safe_load(tyaml)
         return yml
 
-def loss_function(label, predict, mu, log_var):
-    reconstruction_loss = F.binary_cross_entropy(predict, label, reduction='sum')
+def loss_function(correct, predict, mu, log_var):
+    reconstruction_loss = F.binary_cross_entropy(predict, correct, reduction='sum')
     kl_loss = -0.5 * torch.sum(1+ log_var - mu.pow(2) - log_var.exp())
     cvae_loss = reconstruction_loss + kl_loss
     return cvae_loss, reconstruction_loss, kl_loss
+
+def one_hot_vector(labels,class_size):
+    targets_id = torch.zeros(labels.size(0), class_size)
+    for i, label in enumerate(labels):
+        targets_id[i, label] = 1
+    return Variable(targets_id)
+
 
 def train(conf):
     epochs = conf['epochs']
@@ -38,20 +46,23 @@ def train(conf):
     lr = float(conf['learning_rate'])
 
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    loader = MNIST_Loader(conf)
+    cond_dim = loader.dataset.train_labels.unique().size(0)
 
-    model = CVAE(image_size, h_dim, z_dim).to(device)
+    model = CVAE(image_size, h_dim, z_dim,cond_dim).to(device)
+    if torch.cuda.is_available():
+        model.cuda()
     optim = torch.optim.Adam(model.parameters(), lr = lr)
 
     losses = []
     model.train()
-    loader = MNIST_Loader(conf)
 
     for epoch in range(epochs):
 
-        for i, (x, labels) in enumerate(loader):
-
+        for i, (x, labels) in enumerate(loader):        
             x = x.to(device).view(-1, image_size).to(torch.float32)
-            x_recon, mu, log_var, z = model(x)
+            cond = one_hot_vector(labels,cond_dim)
+            x_recon, mu, log_var, z = model(x,cond)
             loss, recon_loss, kl_loss = loss_function(x, x_recon, mu, log_var)
 
             optim.zero_grad()

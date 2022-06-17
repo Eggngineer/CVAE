@@ -1,0 +1,12 @@
+/Users/eggngineer/.pyenv/versions/ml_workspace/lib/python3.10/site-packages/torchvision/datasets/mnist.py:65: UserWarning: train_labels has been renamed targets
+  warnings.warn("train_labels has been renamed targets")
+Traceback (most recent call last):
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 104, in <module>
+    main()
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 98, in main
+    _ , model = train(conf)
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 65, in train
+    x_recon, mu, log_var, z = model(x,cond)
+  File "/Users/eggngineer/.pyenv/versions/ml_workspace/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: CVAE.forward() takes 2 positional arguments but 3 were given

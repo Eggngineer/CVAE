@@ -1,0 +1,10 @@
+/Users/eggngineer/.pyenv/versions/ml_workspace/lib/python3.10/site-packages/torchvision/datasets/mnist.py:65: UserWarning: train_labels has been renamed targets
+  warnings.warn("train_labels has been renamed targets")
+Traceback (most recent call last):
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 106, in <module>
+    main()
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 100, in main
+    _ , model = train(conf)
+  File "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py", line 50, in train
+    cond_dim = loader.dataset.train_labels.unique.size(0)
+AttributeError: 'function' object has no attribute 'size'

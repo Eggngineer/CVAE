@@ -9,14 +9,15 @@ import torch.nn.functional as F
 
 # class : Encoder
 class Encoder(nn.Module):
-  def __init__(self, input_dim, hidden_dim, latent_dim):
+  def __init__(self, input_dim, hidden_dim, latent_dim,cond_dim):
     super(Encoder, self).__init__()
-    self.fc = nn.Linear(input_dim, hidden_dim)
+    self.fc = nn.Linear(input_dim+cond_dim, hidden_dim)
     self.fc_mu = nn.Linear(hidden_dim, latent_dim)
     self.fc_var = nn.Linear(hidden_dim, latent_dim)
 
-  def forward(self, x):
-    h = torch.relu(self.fc(x))
+  def forward(self, x,c):
+    concatted = torch.cat([x,c],1)
+    h = torch.relu(self.fc(concatted))
     mu = self.fc_mu(h)
     log_var = self.fc_var(h)
 
@@ -41,12 +42,12 @@ class Decoder(nn.Module):
 
 # class : CVAE
 class CVAE(nn.Module):
-  def __init__(self, input_dim, hidden_dim, latent_dim):
+  def __init__(self, input_dim, hidden_dim, latent_dim,cond_dim):
     super(CVAE, self).__init__()
-    self.encoder = Encoder(input_dim, hidden_dim, latent_dim)
+    self.encoder = Encoder(input_dim, hidden_dim, latent_dim,cond_dim)
     self.decoder = Decoder(input_dim, hidden_dim, latent_dim)
 
-  def forward(self, x):
-    mu, log_var, z = self.encoder(x)
+  def forward(self, x,c):
+    mu, log_var, z = self.encoder(x,c)
     x_decoded = self.decoder(z)
     return x_decoded, mu, log_var, z

@@ -1,0 +1,1 @@
+{"epoch": 10, "loss": 16106.916015625, "recon_loss": 14072.6083984375, "kl_loss": 2034.30712890625, "_timestamp": 1655442176, "_runtime": 21, "_step": 459, "_wandb": {"runtime": 22}}

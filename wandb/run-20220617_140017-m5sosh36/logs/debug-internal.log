@@ -1,0 +1,149 @@
+2022-06-17 14:00:17,831 INFO    MainThread:83764 [internal.py:wandb_internal():90] W&B internal server running at pid: 83764, started at: 2022-06-17 14:00:17.831458
+2022-06-17 14:00:17,832 INFO    WriterThread:83764 [datastore.py:open_for_write():75] open: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/run-m5sosh36.wandb
+2022-06-17 14:00:17,833 DEBUG   SenderThread:83764 [sender.py:send():235] send: header
+2022-06-17 14:00:17,833 DEBUG   SenderThread:83764 [sender.py:send():235] send: run
+2022-06-17 14:00:18,047 INFO    SenderThread:83764 [dir_watcher.py:__init__():205] watching files in: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files
+2022-06-17 14:00:18,047 INFO    SenderThread:83764 [sender.py:_start_run_threads():812] run started: m5sosh36 with start time 1655442017
+2022-06-17 14:00:18,047 DEBUG   SenderThread:83764 [sender.py:send():235] send: summary
+2022-06-17 14:00:18,048 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: check_version
+2022-06-17 14:00:18,048 INFO    SenderThread:83764 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-17 14:00:18,048 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: check_version
+2022-06-17 14:00:18,276 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: run_start
+2022-06-17 14:00:18,277 DEBUG   HandlerThread:83764 [meta.py:__init__():35] meta init
+2022-06-17 14:00:18,277 DEBUG   HandlerThread:83764 [meta.py:__init__():49] meta init done
+2022-06-17 14:00:18,277 DEBUG   HandlerThread:83764 [meta.py:probe():209] probe
+2022-06-17 14:00:18,284 DEBUG   HandlerThread:83764 [meta.py:_setup_git():199] setup git
+2022-06-17 14:00:18,312 DEBUG   HandlerThread:83764 [meta.py:_setup_git():206] setup git done
+2022-06-17 14:00:18,313 DEBUG   HandlerThread:83764 [meta.py:_save_pip():53] save pip
+2022-06-17 14:00:18,313 DEBUG   HandlerThread:83764 [meta.py:_save_pip():67] save pip done
+2022-06-17 14:00:18,313 DEBUG   HandlerThread:83764 [meta.py:probe():247] probe done
+2022-06-17 14:00:18,317 DEBUG   SenderThread:83764 [sender.py:send():235] send: files
+2022-06-17 14:00:18,318 INFO    SenderThread:83764 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-06-17 14:00:18,324 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-17 14:00:18,324 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: stop_status
+2022-06-17 14:00:18,531 DEBUG   SenderThread:83764 [sender.py:send():235] send: telemetry
+2022-06-17 14:00:18,532 DEBUG   SenderThread:83764 [sender.py:send():235] send: telemetry
+2022-06-17 14:00:18,683 DEBUG   SenderThread:83764 [sender.py:send():235] send: telemetry
+2022-06-17 14:00:19,058 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-summary.json
+2022-06-17 14:00:19,064 INFO    Thread-11 :83764 [upload_job.py:push():132] Uploaded file /var/folders/c6/1vsqjz3s1rbg7731831sf1wm0000gn/T/tmp6e2ku5tjwandb/jni3wn86-wandb-metadata.json
+2022-06-17 14:00:19,064 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/output.log
+2022-06-17 14:00:19,065 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-metadata.json
+2022-06-17 14:00:19,066 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/requirements.txt
+2022-06-17 14:00:20,851 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:20,852 DEBUG   SenderThread:83764 [sender.py:send():235] send: exit
+2022-06-17 14:00:20,852 INFO    SenderThread:83764 [sender.py:send_exit():371] handling exit code: 1
+2022-06-17 14:00:20,852 INFO    SenderThread:83764 [sender.py:send_exit():373] handling runtime: 2
+2022-06-17 14:00:20,853 INFO    SenderThread:83764 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-17 14:00:20,853 INFO    SenderThread:83764 [sender.py:send_exit():379] send defer
+2022-06-17 14:00:20,853 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:20,854 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:20,854 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-17 14:00:20,854 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:20,854 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-06-17 14:00:20,854 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 1
+2022-06-17 14:00:20,854 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:20,854 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-17 14:00:21,058 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-summary.json
+2022-06-17 14:00:21,058 INFO    Thread-7  :83764 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/output.log
+2022-06-17 14:00:21,588 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:21,588 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,588 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-06-17 14:00:21,588 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 2
+2022-06-17 14:00:21,588 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:21,588 DEBUG   SenderThread:83764 [sender.py:send():235] send: stats
+2022-06-17 14:00:21,589 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:21,589 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-17 14:00:21,589 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,589 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-06-17 14:00:21,589 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 3
+2022-06-17 14:00:21,589 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:21,589 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-17 14:00:21,589 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,589 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-06-17 14:00:21,589 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 4
+2022-06-17 14:00:21,589 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:21,589 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-17 14:00:21,589 DEBUG   SenderThread:83764 [sender.py:send():235] send: summary
+2022-06-17 14:00:21,590 INFO    SenderThread:83764 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-17 14:00:21,590 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,590 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-06-17 14:00:21,590 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 5
+2022-06-17 14:00:21,590 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:21,590 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-17 14:00:21,591 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,591 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-06-17 14:00:21,694 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:21,809 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 6
+2022-06-17 14:00:21,809 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:21,810 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:21,810 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-17 14:00:21,810 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:21,810 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-06-17 14:00:21,810 INFO    SenderThread:83764 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-06-17 14:00:21,917 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,064 INFO    SenderThread:83764 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-summary.json
+2022-06-17 14:00:22,065 INFO    SenderThread:83764 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/config.yaml
+2022-06-17 14:00:22,065 INFO    SenderThread:83764 [dir_watcher.py:finish():366] scan: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files
+2022-06-17 14:00:22,066 INFO    SenderThread:83764 [dir_watcher.py:finish():380] scan save: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/requirements.txt requirements.txt
+2022-06-17 14:00:22,066 INFO    SenderThread:83764 [dir_watcher.py:finish():380] scan save: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/output.log output.log
+2022-06-17 14:00:22,066 INFO    SenderThread:83764 [dir_watcher.py:finish():380] scan save: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/config.yaml config.yaml
+2022-06-17 14:00:22,076 INFO    SenderThread:83764 [dir_watcher.py:finish():380] scan save: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-summary.json wandb-summary.json
+2022-06-17 14:00:22,082 INFO    SenderThread:83764 [dir_watcher.py:finish():380] scan save: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-metadata.json wandb-metadata.json
+2022-06-17 14:00:22,083 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 7
+2022-06-17 14:00:22,088 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,090 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:22,091 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-17 14:00:22,091 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:22,091 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-06-17 14:00:22,092 INFO    SenderThread:83764 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-17 14:00:22,197 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,198 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,305 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,305 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,412 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,412 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,518 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,518 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,625 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,625 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,731 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,731 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,774 INFO    Thread-13 :83764 [upload_job.py:push():132] Uploaded file /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/output.log
+2022-06-17 14:00:22,774 INFO    Thread-14 :83764 [upload_job.py:push():132] Uploaded file /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/config.yaml
+2022-06-17 14:00:22,775 INFO    Thread-15 :83764 [upload_job.py:push():132] Uploaded file /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/wandb-summary.json
+2022-06-17 14:00:22,826 INFO    Thread-12 :83764 [upload_job.py:push():132] Uploaded file /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/files/requirements.txt
+2022-06-17 14:00:22,833 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,834 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:22,942 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:22,942 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:23,032 INFO    Thread-6 (_thread_body):83764 [sender.py:transition_state():392] send defer: 8
+2022-06-17 14:00:23,033 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:23,034 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-17 14:00:23,034 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:23,034 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-06-17 14:00:23,052 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:23,480 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 9
+2022-06-17 14:00:23,481 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:23,482 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:23,482 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-17 14:00:23,483 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:23,483 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-06-17 14:00:23,483 INFO    SenderThread:83764 [sender.py:transition_state():392] send defer: 10
+2022-06-17 14:00:23,485 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: defer
+2022-06-17 14:00:23,486 DEBUG   SenderThread:83764 [sender.py:send():235] send: final
+2022-06-17 14:00:23,486 INFO    HandlerThread:83764 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-17 14:00:23,486 DEBUG   SenderThread:83764 [sender.py:send():235] send: footer
+2022-06-17 14:00:23,487 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: defer
+2022-06-17 14:00:23,487 INFO    SenderThread:83764 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-06-17 14:00:23,588 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-17 14:00:23,589 DEBUG   SenderThread:83764 [sender.py:send_request():249] send_request: poll_exit
+2022-06-17 14:00:23,589 INFO    SenderThread:83764 [file_pusher.py:join():150] waiting for file pusher
+2022-06-17 14:00:24,186 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-17 14:00:24,188 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-17 14:00:24,189 DEBUG   HandlerThread:83764 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-17 14:00:24,189 INFO    HandlerThread:83764 [handler.py:finish():806] shutting down handler
+2022-06-17 14:00:24,491 INFO    WriterThread:83764 [datastore.py:close():279] close: /Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/wandb/run-20220617_140017-m5sosh36/run-m5sosh36.wandb
+2022-06-17 14:00:25,082 INFO    SenderThread:83764 [sender.py:finish():1111] shutting down sender
+2022-06-17 14:00:25,083 INFO    SenderThread:83764 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-17 14:00:25,083 INFO    SenderThread:83764 [file_pusher.py:join():150] waiting for file pusher
+2022-06-17 14:00:25,089 INFO    MainThread:83764 [internal.py:handle_exit():80] Internal process exited

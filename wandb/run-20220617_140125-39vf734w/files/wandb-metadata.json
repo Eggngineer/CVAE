@@ -1,0 +1,22 @@
+{
+    "os": "macOS-12.3.1-arm64-arm-64bit",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-06-17T05:01:26.374686",
+    "startedAt": "2022-06-17T05:01:25.610815",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/Eggngineer/CVAE.git",
+        "commit": "44906351a45ef97533e93ece956aa43b66d12217"
+    },
+    "email": "yama_shin1999@icloud.com",
+    "root": "/Users/eggngineer/FILEs/DEVs/Git/github.com/Eggngineer/CVAE",
+    "host": "katsuwlan187238.ed.tus.ac.jp",
+    "username": "eggngineer",
+    "executable": "/Users/eggngineer/.pyenv/versions/ml_workspace/bin/python"
+}
