@@ -3,7 +3,7 @@ sys.dont_write_bytecode = True
 
 import torch
 from data . dataloader import MNIST_Loader
-from model.vae import VAE
+from model.cvae import CVAE
 import torch.nn.functional as F
 import yaml
 import numpy as np
@@ -27,8 +27,8 @@ def load_yml(yml_path):
 def loss_function(label, predict, mu, log_var):
     reconstruction_loss = F.binary_cross_entropy(predict, label, reduction='sum')
     kl_loss = -0.5 * torch.sum(1+ log_var - mu.pow(2) - log_var.exp())
-    vae_loss = reconstruction_loss + kl_loss
-    return vae_loss, reconstruction_loss, kl_loss
+    cvae_loss = reconstruction_loss + kl_loss
+    return cvae_loss, reconstruction_loss, kl_loss
 
 def train(conf):
     epochs = conf['epochs']
@@ -39,7 +39,7 @@ def train(conf):
 
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-    model = VAE(image_size, h_dim, z_dim).to(device)
+    model = CVAE(image_size, h_dim, z_dim).to(device)
     optim = torch.optim.Adam(model.parameters(), lr = lr)
 
     losses = []
@@ -62,7 +62,7 @@ def train(conf):
                 wandb.log({'epoch':epoch+1, 'loss':loss, 'recon_loss':recon_loss, 'kl_loss':kl_loss})
 
             losses.append(loss)
-        wandb.save("vae.h5")
+        wandb.save("cvae.h5")
 
     return losses, model
 

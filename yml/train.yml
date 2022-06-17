@@ -1,5 +1,5 @@
-project_name: 'VAE'
-train_name: 'base_savemodel'
+project_name: 'CVAE'
+train_name: 'CVAE_tryTrain'
 
 
 roots : './data'

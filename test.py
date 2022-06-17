@@ -6,7 +6,7 @@ import yaml
 import wandb
 import numpy as np
 from pathlib import Path
-from model.vae import VAE
+from model.cvae import CVAE
 
 def fix_seed(seed):
     torch.manual_seed(seed)
@@ -30,7 +30,7 @@ def evals(conf):
     WEIGHT_DIR = BASE_DIR / conf['weight']
     model_path = WEIGHT_DIR / (conf['model_name']+'.pth')
 
-    model = VAE(image_size,h_dim,z_dim).to(device)
+    model = CVAE(image_size,h_dim,z_dim).to(device)
     model.load_state_dict(torch.load(model_path))
 
     model.eval()

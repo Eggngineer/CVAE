@@ -1,9 +1,13 @@
+#Without Cache
+import sys
+sys.dont_write_bytecode = True
+
 # Pytorch Reference
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# class Encoder
+# class : Encoder
 class Encoder(nn.Module):
   def __init__(self, input_dim, hidden_dim, latent_dim):
     super(Encoder, self).__init__()
@@ -35,10 +39,10 @@ class Decoder(nn.Module):
     return output 
 
 
-# class : VAE
-class VAE(nn.Module):
+# class : CVAE
+class CVAE(nn.Module):
   def __init__(self, input_dim, hidden_dim, latent_dim):
-    super(VAE, self).__init__()
+    super(CVAE, self).__init__()
     self.encoder = Encoder(input_dim, hidden_dim, latent_dim)
     self.decoder = Decoder(input_dim, hidden_dim, latent_dim)
 

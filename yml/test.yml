@@ -1,11 +1,11 @@
-project_name: 'VAE'
-test_name: 'base_use_trained_model'
+project_name: 'CVAE'
+test_name: 'CVAE_tryTest'
 
 
 roots : './data'
 weight : 'wb'
 yml : 'yml/train.yml'
-model_name : 'base_savemodel'
+model_name : 'CVAE_tryTrain'
 
 train : True
 downloads : True
