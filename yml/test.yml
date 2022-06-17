@@ -1,0 +1,23 @@
+project_name: 'VAE'
+test_name: 'base_use_trained_model'
+
+
+roots : './data'
+weight : 'wb'
+yml : 'yml/train.yml'
+model_name : 'base_savemodel'
+
+train : True
+downloads : True
+shuffle : True
+
+learning_rate : 1e-3
+seed : 1234
+
+
+batch_size : 128 
+workers : 0
+epochs : 10
+image_size : 784 #28*28
+h_dim : 32
+z_dim : 16
